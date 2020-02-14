@@ -15,11 +15,25 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 	
 	public static void main(String[] args) {
-			
+		boolean Continue = true;	
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
+		while (Continue) {	
+			String choice = JOptionPane.showInputDialog("What animal would you like to eavesdrop on? You may choose cow, duck, dog, cat, or llama. Say pufferfsh to escape.");
+			if (choice.equalsIgnoreCase("pufferfish")) {
+				Continue = false;
+			} else if (choice.equalsIgnoreCase("cow")) {
+				playMoo();
+			} else if (choice.equalsIgnoreCase("duck")) {
+				playQuack();
+			} else if (choice.equalsIgnoreCase("dog")) {
+				playWoof();
+			} else if (choice.equalsIgnoreCase("cat")) {
+				playMeow();
+			} else if (choice.equalsIgnoreCase("llama")) {
+				playLlama();
+			}
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		}
 	}
 
 	static void playMoo() {
