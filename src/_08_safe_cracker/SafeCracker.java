@@ -23,6 +23,9 @@ public class SafeCracker {
 		 * combinations
 		 */
 		
+		for (int i = 100; i > 0; i--) {
+			tryCode(i + 9999899);
+		}
 
 	}
 
