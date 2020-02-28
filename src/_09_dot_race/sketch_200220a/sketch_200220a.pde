@@ -1,22 +1,26 @@
 //1. Make a variable to hold the X co-ordinate of the dot and set it to 50.
-int dotX = 50;
+int dotX = 10;
 void setup() {
     size(800, 200);
 }
 
 void draw() {
+    clear();
     //3. make the ellipse a nice color
     fill(250, 200, 150);
     //4. If the mouse is pressed change the X co-ordinate so that the dot moves to the right
     if (mousePressed) {
-      dotX += 50;
+      dotX += 20;
     }
     //5. Make your dot move faster
     //  (you have to figure out what part of your code to change)
 
     //2. Draw an ellipse of height and width 10. Make sure to use your variable for the X position.
-   ellipse(0,0,10,dotX);
-    //6. Use the playSound() method to play a ding when your dot crosses the finish line. 
+   ellipse(dotX,100,10,10);
+    //6. Use the playSound() method to play a ding when your dot crosses the finish line.
+    if (dotX==9) {
+      playSound();
+    }
 }
 
 import ddf.minim.*;
