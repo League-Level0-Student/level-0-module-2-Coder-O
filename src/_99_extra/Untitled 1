@@ -1,0 +1,19 @@
+/*Random ranGen = new Random();
+int firstNumb = ranGen.nextInt(1,000);
+int secondNumb = ranGen.nextInt(900);
+System.out.println(firstNumb + secondNumb);
+System.out.println(firstNumb - secondNumb);
+//*/
+////
+////
+////
+////
+////
+
+
+
+String cupsOfFlour = JOptionPane.showInputDialog("How many cups of flour do you have?");
+
+if (Integer.parseInt(cupsOfFlour) < 2) {
+	JOptionPane.showMessageDialog(null, "Go to the store to buy more flour!");
+}

@@ -2,7 +2,7 @@
        
  int ellipseX = 250;
  int ellipseY = 250;
- int ellipseSize = 50;
+ float ellipseSize = 50;
     void setup() {
       // 2. Set the size of your sketch
       size(500,500);
@@ -20,15 +20,18 @@
     
     void mousePressed() {
       //5. Create an integer variable called distance
-      
+      int distance;
       //6. Set the value of the distance variable to the value returned by the getDistance method
       //   Pass the mouse's x and y (mouseX and mouseY) and the x and y of your ellipse to the method.
-        
+        distance = getDistance(mouseX, mouseY, ellipseX, ellipseY);
           
       //7.  Use an if statement to check if the distance variable is < the radius of the ellipse
       //    If it is, set a new x and y for the ellipse, using a random location on the window
       //    Hint: Use the Processing random() function
-       
+       if (distance<ellipseSize) {
+         ellipseX= int(random(300) + 50);
+         ellipseY= int(random(300) + 50);
+       }
       
     }
     
