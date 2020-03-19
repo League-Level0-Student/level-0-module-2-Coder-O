@@ -17,3 +17,20 @@ String cupsOfFlour = JOptionPane.showInputDialog("How many cups of flour do you 
 if (Integer.parseInt(cupsOfFlour) < 2) {
 	JOptionPane.showMessageDialog(null, "Go to the store to buy more flour!");
 }
+int numbOfPeople = Integer.ParseInt(JOptionPane.showInputDialog("How many people are you making cookies for?"));
+
+if (numbOfPeople > 30) {
+	JOptionPane.showMessageDialog("You need to bake at least 2 batches!");
+}
+
+int numbOfBatches = Integer.ParseInt(JOptionPane.showInputDialog("How many batches did you make?"));
+
+if (numbOfBatches = 2) {
+	JOptionPane.showMessageDialog("You are lucky to have so many friendsYes.!");
+}
+
+1. printMessage();
+
+2. setName("Pupher_Phish");
+
+3. System.out.println(getNumber());
